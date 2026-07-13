@@ -1,0 +1,7 @@
+interface:
+  display_name: "Codex Token Audit"
+  short_description: "Audit Codex context and token overhead"
+  default_prompt: "Use $codex-token-audit to audit my Codex context and token overhead."
+
+policy:
+  allow_implicit_invocation: false
