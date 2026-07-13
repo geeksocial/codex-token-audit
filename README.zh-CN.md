@@ -38,10 +38,10 @@ Codex 配置会随使用逐渐膨胀：
 
 ## 安装
 
-在 Codex 中让 Skill Installer 安装：
+在 Codex 中输入：
 
 ```text
-https://github.com/geeksocial/codex-token-audit/tree/main/skills/codex-token-audit
+请使用 Skill Installer 安装：https://github.com/geeksocial/codex-token-audit/tree/main/skills/codex-token-audit
 ```
 
 安装后重启 Codex。
@@ -57,20 +57,20 @@ $codex-token-audit
 忽略已经接受、不需要重复建议的 Skill：
 
 ```bash
-python scripts/audit.py --ignore-skill <skill-name>
+python skills/codex-token-audit/scripts/audit.py --ignore-skill <skill-name>
 ```
 
 建立基线并定期比较：
 
 ```bash
-python scripts/audit.py --save-baseline token-baseline.json
-python scripts/audit.py --compare token-baseline.json
+python skills/codex-token-audit/scripts/audit.py --save-baseline token-baseline.json
+python skills/codex-token-audit/scripts/audit.py --compare token-baseline.json
 ```
 
 分享报告前隐藏本地路径：
 
 ```bash
-python scripts/audit.py --redact-paths
+python skills/codex-token-audit/scripts/audit.py --redact-paths
 ```
 
 ## 安全边界

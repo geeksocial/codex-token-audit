@@ -14,10 +14,10 @@ Read-only audit for persistent Codex context overhead.
 
 ## Install
 
-Ask Codex Skill Installer to install:
+Ask Codex:
 
 ```text
-https://github.com/geeksocial/codex-token-audit/tree/main/skills/codex-token-audit
+Install this skill with Skill Installer: https://github.com/geeksocial/codex-token-audit/tree/main/skills/codex-token-audit
 ```
 
 Then restart Codex.
@@ -33,8 +33,8 @@ The audit reports at most three high-value fixes. Nothing changes until the user
 Periodic comparison:
 
 ```bash
-python scripts/audit.py --save-baseline token-baseline.json
-python scripts/audit.py --compare token-baseline.json
+python skills/codex-token-audit/scripts/audit.py --save-baseline token-baseline.json
+python skills/codex-token-audit/scripts/audit.py --compare token-baseline.json
 ```
 
 Use `--redact-paths` before sharing output.
